@@ -1,0 +1,107 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{AA4CFEC3-F8E5-4EF4-A403-1FBAAF0056B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TicTacToe</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\TicTacToe\v15\.suo" />
+    <None Include=".vs\TicTacToe\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\TicTacToe\v15\Server\sqlite3\storage.ide" />
+    <None Include="TicTacToe\App.config" />
+    <None Include="TicTacToe\bin\Debug\TicTacToe.exe.config" />
+    <None Include="TicTacToe\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="TicTacToe\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="TicTacToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache" />
+    <None Include="TicTacToe\obj\Debug\TicTacToe.csproj.GenerateResource.Cache" />
+    <None Include="TicTacToe\obj\Debug\TicTacToe.csprojResolveAssemblyReference.cache" />
+    <None Include="TicTacToe\Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TicTacToe\.gitattributes" />
+    <Content Include="TicTacToe\bin\Debug\TicTacToe.exe" />
+    <Content Include="TicTacToe\bin\Debug\TicTacToe.pdb" />
+    <Content Include="TicTacToe\obj\Debug\TicTacToe.csproj.FileListAbsolute.txt" />
+    <Content Include="TicTacToe\obj\Debug\TicTacToe.exe" />
+    <Content Include="TicTacToe\obj\Debug\TicTacToe.pdb" />
+    <Content Include="TicTacToe\TicTacToe.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TicTacToe\AlgoBot.cs" />
+    <Compile Include="TicTacToe\Bot.cs" />
+    <Compile Include="TicTacToe\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicTacToe\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicTacToe\Game.cs" />
+    <Compile Include="TicTacToe\InputNeuron.cs" />
+    <Compile Include="TicTacToe\Network.cs" />
+    <Compile Include="TicTacToe\NeuralBot.cs" />
+    <Compile Include="TicTacToe\Neuron.cs" />
+    <Compile Include="TicTacToe\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="TicTacToe\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="TicTacToe\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="TicTacToe\Player.cs" />
+    <Compile Include="TicTacToe\Program.cs" />
+    <Compile Include="TicTacToe\Properties\AssemblyInfo.cs" />
+    <Compile Include="TicTacToe\Properties\Resources.Designer.cs" />
+    <Compile Include="TicTacToe\Properties\Settings.Designer.cs" />
+    <Compile Include="TicTacToe\RandBot.cs" />
+    <Compile Include="TicTacToe\Sigmoid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TicTacToe\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicTacToe\obj\Debug\TicTacToe.Form1.resources" />
+    <EmbeddedResource Include="TicTacToe\obj\Debug\TicTacToe.Properties.Resources.resources" />
+    <EmbeddedResource Include="TicTacToe\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TicTacToe\obj\Debug\TempPE\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
